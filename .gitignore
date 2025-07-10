@@ -1,15 +1,35 @@
-
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# Symfony cache and logs
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+/node_modules/
 
-###> phpunit/phpunit ###
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PHPUnit
 /phpunit.xml
-/.phpunit.cache/
-###< phpunit/phpunit ###
+/phpunit.xml.dist
+/phpunit.result.cache
+
+# IDE configs
+/.idea/
+/.vscode/
+/*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/build/
+/public/build/
+/public/bundles/
+
+# Composer
+composer.lock
+
+# Misc
+*.log
+*.swp
